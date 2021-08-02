@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emma Wigglesworth</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">Emma Wigglesworth</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About Me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="#contact" class="button" id="contact-page">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Intro Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Hi there! My name is <span>Emma Wigglesworth</span></h1>
+        <p class="hero__description">Software Engineering Student</p>
+        <button class="main__btn"><a href="#about">More About me</a></button>
+        <!-- <a href="#about" class="navbar__links" id="about-page">About Me</a> -->
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><img src="intro_pic.jpg" alt="Intro Picture"></div>
+        </div>
+        <div class="main__content">
+          <h2>About Me</h2>
+          <h1> software engineering | game development | digital arts</h1>
+          <p>I am a second year Software Engineering student at McMaster University (Co-Op).</p>
+          <p>I am currently interested in and teaching myself game development and the visual and 
+              animated arts.</p>
+          <button class="main__btn"><a href="#projects">Explore My Projects</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- projects Section -->
+    <div class="projects" id="projects">
+      <h1>My Projects</h1>
+      <div class="projects__wrapper">
+        <div class="projects__card">
+          <h2>Pygame</h2>
+          <p>Developing arcade-style gameplay in Pygame</p>
+          <div class="projects__btn"><button><a href="pages/pygame.html">Learn More</a></button></div>
+        </div>
+        <div class="projects__card">
+          <h2>Unity</h2>
+          <p>Experimenting with and editing games using Unity</p>
+          <div class="projects__btn"><button><a href="pages/unity.html">Learn More</a></button></div>
+        </div>
+        <div class="projects__card">
+          <h2>Animation</h2>
+          <p>Practicing and Developing skills in digital arts and animation</p>
+          <div class="projects__btn"><button><a href="pages/animation.html">Learn More</a></button></div>
+        </div>
+        <div class="projects__card">
+          <h2>Engineering Projects</h2>
+          <p>A series of Engineering projects completed at McMaster University</p>
+          <div class="projects__btn"><button><a href="pages/engineering.html">Learn More</a></button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="main" id="contact">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Want to know more?</h1>
+          <h2>Contact Me</h2>
+          <p>Feel free to email me about any inquiries at emma@kewbeach.ca</p>
+          <p>or connect with me:</p>
+          <button class="main__btn"><a href="https://www.linkedin.com/in/emma-wigglesworth-96597b215/">Linkedin</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section 
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+            <a href="/">Careers</a> <a href="/">Terms of Service</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Destinations</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+            <a href="/">Agency</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">COLOR</a>
+          </div>
+          <p class="website__rights">© COLOR 2020. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>-->
+
+    <script src="app.js"></script>
+  </body>
+</html>
