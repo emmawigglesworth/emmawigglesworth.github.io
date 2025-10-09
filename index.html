@@ -3,166 +3,238 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emma Wigglesworth</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Emma Wigglesworth · Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
     />
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="#home" id="navbar__logo">Emma Wigglesworth</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="header" id="home">
+      <nav class="nav">
+        <a href="#home" class="nav__brand">Emma Wigglesworth</a>
+        <button class="nav__toggle" id="mobile-menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav__links" id="nav-menu">
+          <a href="#about" class="nav__link">About</a>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#experience" class="nav__link">Experience</a>
+          <a href="#contact" class="nav__link">Contact</a>
         </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="#home" class="navbar__links" id="home-page">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#about" class="navbar__links" id="about-page">About Me</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
-          </li>
-          <li class="navbar__btn">
-            <a href="#contact" class="button" id="contact-page">Contact Me</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <a class="nav__contact" href="mailto:emma@kewbeach.ca">Let's talk</a>
+      </nav>
 
-    <!-- Home Intro Section -->
-    <div class="hero" id="home">
-      <div class="hero__container">
-        <h1 class="hero__heading">Hi there! My name is <span>Emma Wigglesworth</span></h1>
-        <p class="hero__description">Software Engineering Student</p>
-        <button class="main__btn"><a href="#about">More About me</a></button>
-        <!-- <a href="#about" class="navbar__links" id="about-page">About Me</a> -->
-      </div>
-    </div>
-
-    <!-- About Me Section -->
-    <div class="main" id="about">
-      <div class="main__container">
-        <div class="main__img--container">
-          <div class="main__img--card"><img src="intro_pic.jpg" class = "main_img--rounded"></div>
-        </div>
-        <div class="main__content">
-          <h2>About Me</h2>
-          <h1> software engineering | game development | digital arts</h1>
-          <p>I am a fourth-year Software Engineering student at McMaster University (Co-Op).</p>
-          <p>I am currently interested in, and teaching myself game development and the visual and 
-              animated arts.</p>
-          <button class="main__btn"><a href="#projects">Explore My Projects</a></button>
-        </div>
-      </div>
-    </div>
-
-    <!-- projects Section -->
-    <div class="projects" id="projects">
-      <h1>My Projects</h1>
-      <div class="projects__wrapper">
-        <div class="projects__card">
-          <h2>Pygame</h2>
-          <p>Developing arcade-style gameplay in Pygame</p>
-          <div class="projects__btn"><button><a href="pages/pygame.html">Learn More</a></button></div>
-        </div>
-        <div class="projects__card">
-          <h2>Unity</h2>
-          <p>Experimenting with and editing games using Unity</p>
-          <div class="projects__btn"><button><a href="pages/unity.html">Learn More</a></button></div>
-        </div>
-        <div class="projects__card">
-          <h2>Animation</h2>
-          <p>Practicing and Developing skills in digital arts and animation</p>
-          <div class="projects__btn"><button><a href="pages/animation.html">Learn More</a></button></div>
-        </div>
-        <div class="projects__card">
-          <h2>Engineering Projects</h2>
-          <p>A series of Engineering projects completed at McMaster University</p>
-          <div class="projects__btn"><button><a href="pages/engineering.html">Learn More</a></button></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div class="main" id="contact">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>Want to know more?</h1>
-          <h2>Contact Me</h2>
-          <p>Feel free to email me about any inquiries at emma@kewbeach.ca</p>
-          <p>or connect with me:</p>
-          <button class="main__btn"><a href="https://www.linkedin.com/in/emma-wigglesworth-96597b215/">Linkedin</a></button>
-        </div>
-        <div class="main__img--container">
-          <div class="main__img--card" id="card-2">
-            <i class="fas fa-users"></i>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Software engineering · creative technology</p>
+          <h1 class="hero__title">
+            Designing <span>playful experiences</span> where code meets imagination.
+          </h1>
+          <p class="hero__description">
+            I'm a fourth-year Software Engineering student blending technical rigour with motion,
+            storytelling, and game worlds. I build immersive interfaces, thoughtful tools, and
+            joyful experiments across the interactive spectrum.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#projects">Explore featured work</a>
+            <a class="button button--ghost" href="mailto:emma@kewbeach.ca">Start a conversation</a>
+          </div>
+          <div class="hero__chips">
+            <span class="hero__chip">Game Development</span>
+            <span class="hero__chip">Technical Art</span>
+            <span class="hero__chip">Systems Design</span>
+            <span class="hero__chip">Interactive Media</span>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Footer Section 
-    <div class="footer__container">
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>About Us</h2>
-            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
-            <a href="/">Careers</a> <a href="/">Terms of Service</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Contact Us</h2>
-            <a href="/">Contact</a> <a href="/">Support</a>
-            <a href="/">Destinations</a>
-          </div>
-        </div>
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>Videos</h2>
-            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
-            <a href="/">Agency</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Social Media</h2>
-            <a href="/">Instagram</a> <a href="/">Facebook</a>
-            <a href="/">Youtube</a> <a href="/">Twitter</a>
-          </div>
-        </div>
-      </div>
-      <section class="social__media">
-        <div class="social__media--wrap">
-          <div class="footer__logo">
-            <a href="/" id="footer__logo">COLOR</a>
-          </div>
-          <p class="website__rights">© COLOR 2020. All rights reserved</p>
-          <div class="social__icons">
-            <a href="/" class="social__icon--link" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-twitter"></i
-            ></a>
+        <div class="hero__visual">
+          <div class="hero__visual-inner">
+            <h3>Currently crafting</h3>
+            <span>Multiplayer Unity tools</span>
+            <p>
+              Prototyping modular gameplay systems and responsive UI that scales from desktop to
+              couch co-op.
+            </p>
           </div>
         </div>
       </section>
-    </div>-->
+    </header>
 
-    <script src="app.js"></script>
+    <main>
+      <section class="section about" id="about">
+        <p class="section__eyebrow">About</p>
+        <h2 class="section__title">Where engineering meets artistry</h2>
+        <p class="section__description">
+          I love building experiences that feel polished, human, and a little bit magical. My work
+          spans gameplay mechanics, real-time animation, and intelligent systems that empower
+          creators and players alike.
+        </p>
+
+        <div class="about__grid">
+          <article class="about__bio">
+            <p>
+              I'm currently finishing my Software Engineering degree at McMaster University, where I
+              dive deep into systems architecture, graphics, and collaborative design. Outside of
+              class, I experiment with small games, motion studies, and creative coding sketches to
+              push my craft.
+            </p>
+            <p>
+              Whether I'm optimising a pipeline, prototyping a new mechanic, or shaping a brand's
+              visual language, I focus on clarity, empathy, and playful interaction.
+            </p>
+
+            <div class="about__highlights">
+              <div class="highlight-card">
+                <small>Focus</small>
+                <span>Software · Games · Art</span>
+                Bridging engineering rigour with imagination across disciplines.
+              </div>
+              <div class="highlight-card">
+                <small>Community</small>
+                <span>Mentor &amp; collaborator</span>
+                Leading peer study groups, game jams, and creative coding meetups.
+              </div>
+            </div>
+          </article>
+
+          <aside class="about__skills">
+            <div class="skill-block">
+              <h3>Toolset</h3>
+              <div class="tag-list">
+                <span class="tag">C# / Unity</span>
+                <span class="tag">Python / Pygame</span>
+                <span class="tag">C / C++</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Git &amp; CI</span>
+                <span class="tag">Figma</span>
+              </div>
+            </div>
+            <div class="skill-block">
+              <h3>Currently Exploring</h3>
+              <div class="tag-list">
+                <span class="tag">Procedural animation</span>
+                <span class="tag">Networked play</span>
+                <span class="tag">Shader art</span>
+                <span class="tag">Immersive audio</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <p class="section__eyebrow">Featured Projects</p>
+        <h2 class="section__title">Playable worlds and interactive stories</h2>
+        <p class="section__description">
+          Highlights from recent experiments in gameplay, UI systems, and visual storytelling.
+        </p>
+
+        <div class="projects__grid">
+          <a class="project-card" href="pages/pygame.html">
+            <h3>Pygame prototypes</h3>
+            <p>
+              Building responsive arcade experiences, modular enemy systems, and juicy feedback loops
+              in Python.
+            </p>
+            <span>View the process →</span>
+          </a>
+          <a class="project-card" href="pages/unity.html">
+            <h3>Unity explorations</h3>
+            <p>
+              Designing immersive environments, tooling custom editors, and bridging gameplay with
+              motion design.
+            </p>
+            <span>See case study →</span>
+          </a>
+          <a class="project-card" href="pages/animation.html">
+            <h3>Animation studies</h3>
+            <p>
+              Merging illustration, 2D/3D motion, and shader experiments to elevate storytelling and
+              UI interactions.
+            </p>
+            <span>View gallery →</span>
+          </a>
+          <a class="project-card" href="pages/engineering.html">
+            <h3>Engineering builds</h3>
+            <p>
+              Technical projects from McMaster—from embedded systems to collaborative software
+              tooling.
+            </p>
+            <span>Explore details →</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <p class="section__eyebrow">Experience</p>
+        <h2 class="section__title">Moments that shaped my craft</h2>
+        <p class="section__description">
+          Collaboration, curiosity, and community drive every project I take on.
+        </p>
+
+        <div class="experience__timeline">
+          <article class="timeline-item">
+            <span>2023 — Present</span>
+            <h4>Software Engineering @ McMaster University</h4>
+            <p>
+              Studying systems programming, human-computer interaction, and intelligent algorithms
+              while leading peer mentoring sessions for incoming students.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <span>2022 — 2023</span>
+            <h4>Interactive Media Lab · Student Developer</h4>
+            <p>
+              Built rapid prototypes in Unity and Python to support research into storytelling and
+              embodied play. Delivered polished demos showcased at campus events.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <span>2019 — Present</span>
+            <h4>Independent Creative Technologist</h4>
+            <p>
+              Self-directed exploration of game jams, animation studies, and community workshops.
+              Sharing learnings through blog posts, livestreams, and mentorship.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section class="contact" id="contact">
+      <div class="contact__inner">
+        <div>
+          <h2 class="contact__headline">Let's build something memorable together</h2>
+          <p class="contact__text">
+            I’m always excited to chat about interactive storytelling, playful tech, or any idea
+            that brings people joy. Drop a note and let’s explore what we can create.
+          </p>
+          <a class="button button--primary" href="mailto:emma@kewbeach.ca">Email Emma</a>
+        </div>
+        <div class="contact__panel">
+          <h3>Reach out</h3>
+          <p>
+            <a href="mailto:emma@kewbeach.ca">emma@kewbeach.ca</a>
+          </p>
+          <p>Connect on LinkedIn for professional updates and collaboration opportunities.</p>
+          <a class="button button--ghost" href="https://www.linkedin.com/in/emma-wigglesworth-96597b215/">LinkedIn profile</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Emma Wigglesworth. Crafted with curiosity and care.</span>
+      <div class="footer__socials">
+        <a href="mailto:emma@kewbeach.ca" aria-label="Email Emma">✉️</a>
+        <a href="https://www.linkedin.com/in/emma-wigglesworth-96597b215/" aria-label="LinkedIn profile">in</a>
+        <a href="#projects" aria-label="Browse projects">★</a>
+      </div>
+    </footer>
   </body>
 </html>
