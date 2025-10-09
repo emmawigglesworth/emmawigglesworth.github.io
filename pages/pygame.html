@@ -3,57 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emma Wigglesworth</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <title>Pygame Prototypes · Emma Wigglesworth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
     />
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="../index.html" id="navbar__logo">Emma Wigglesworth</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="../index.html" class="navbar__links" id="home-page">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="../index.html#about" class="navbar__links" id="about-page">About Me</a>
-          </li>
-          <li class="navbar__item">
-            <a href="../index.html#projects" class="navbar__links" id="projects-page"
-              >Projects</a
-            >
-          </li>
-          <li class="navbar__btn">
-            <a href="../index.html#contact" class="button" id="contact-page">Contact Me</a>
-          </li>
-        </ul>
+    <link rel="stylesheet" href="../styles.css" />
+    <script defer src="../app.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="../index.html" class="nav__brand">Emma Wigglesworth</a>
+      <button class="nav__toggle" id="mobile-menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav__links" id="nav-menu">
+        <a href="../index.html#about" class="nav__link">About</a>
+        <a href="../index.html#projects" class="nav__link">Projects</a>
+        <a href="../index.html#experience" class="nav__link">Experience</a>
+        <a href="../index.html#contact" class="nav__link">Contact</a>
       </div>
+      <a class="nav__contact" href="mailto:emma@kewbeach.ca">Let's talk</a>
     </nav>
 
-    <!-- Home Intro Section -->
-    <div class="pages" id="home">
-      <div class="pages__container">
-        <div class="pages__content">
-          <h2>Game Development in Pygame</h1><br>
-            <br>
-          <P>I have been learning how to build user-interactive games froms scratch using Pygame for 
-            2 years. I was first introduced to Pygame through my highschool computer science course 
-            and have been continuing my work ever since.
-          </P>
-          <p>So far I have created multiple complete games experimenting with the use of classes 
-            and sprites.</p>
-      </div>
-      </div>
-    </div>
+    <main class="page">
+      <header class="page__header">
+        <p class="page__eyebrow">Project spotlight</p>
+        <h1 class="page__title">Arcade stories crafted in Pygame</h1>
+        <p class="page__lede">
+          A collection of kinetic prototypes exploring arcade physics, playful feedback, and how to
+          build satisfying game feel with lightweight Python tools.
+        </p>
+      </header>
 
-    <script src="../app.js"></script>
+      <section class="page__content">
+        <article class="page-card">
+          <h3>Designing delightful mechanics</h3>
+          <p>
+            Iterated on jump arcs, enemy behaviour, and level pacing to keep every encounter feeling
+            dynamic and fair. Quick playtests informed micro-adjustments to speed, friction, and
+            collision so the controls respond instantly.
+          </p>
+        </article>
+        <article class="page-card">
+          <h3>Modular systems</h3>
+          <ul>
+            <li>Entity-component architecture for re-usable enemies and power-ups.</li>
+            <li>Scene manager to swap game states without duplicating code.</li>
+            <li>Particle + audio hooks for juicy hits, wins, and level transitions.</li>
+          </ul>
+        </article>
+        <article class="page-card">
+          <h3>Learning outcomes</h3>
+          <p>
+            Rebuilt my understanding of Python best practices, prototyping loops, and performance on
+            modest hardware. The toolkit now powers weekend jams and experimentation with friends.
+          </p>
+        </article>
+      </section>
+
+      <a class="page__cta" href="../index.html#projects">← Back to portfolio overview</a>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Emma Wigglesworth. Crafted with curiosity and care.</span>
+      <div class="footer__socials">
+        <a href="mailto:emma@kewbeach.ca" aria-label="Email Emma">✉️</a>
+        <a href="https://www.linkedin.com/in/emma-wigglesworth-96597b215/" aria-label="LinkedIn profile">in</a>
+        <a href="../index.html#projects" aria-label="Browse projects">★</a>
+      </div>
+    </footer>
   </body>
 </html>
