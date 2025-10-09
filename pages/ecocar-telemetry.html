@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoCAR Telemetry Suite · Emma Wigglesworth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script defer src="../app.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="../index.html" class="nav__brand">Emma Wigglesworth</a>
+      <button class="nav__toggle" id="mobile-menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav__links" id="nav-menu">
+        <a href="../index.html#about" class="nav__link">About</a>
+        <a href="../index.html#projects" class="nav__link">Projects</a>
+        <a href="../index.html#experience" class="nav__link">Experience</a>
+        <a href="../index.html#contact" class="nav__link">Contact</a>
+      </div>
+      <a class="nav__contact" href="mailto:emma@kewbeach.ca">Let's talk</a>
+    </nav>
+
+    <main class="page">
+      <header class="page__header">
+        <p class="page__eyebrow">Project spotlight</p>
+        <h1 class="page__title">EcoCAR Telemetry Suite</h1>
+        <p class="page__lede">
+          For McMaster Engineering's EcoCAR initiative I co-led the software stream developing
+          connected vehicle analytics. The suite ingests telemetry data from hybrid vehicles and
+          translates it into dashboards for engineering and leadership teams.
+        </p>
+      </header>
+
+      <section class="page__content">
+        <article class="page-card">
+          <h3>Pipeline architecture</h3>
+          <p>
+            Designed Python services that cleaned and transformed CAN bus data before persisting it in
+            cloud storage. I introduced data validation steps to flag anomalies early and built
+            monitoring alerts so we could respond quickly during track testing.
+          </p>
+        </article>
+        <article class="page-card">
+          <h3>Insights for every stakeholder</h3>
+          <ul>
+            <li>Built dashboards that helped powertrain engineers analyse efficiency trends across
+              drive cycles.</li>
+            <li>Provided leadership snapshots of charging habits and overall fleet health.</li>
+            <li>Shared documentation that onboarded new team members to the data model and tooling.</li>
+          </ul>
+        </article>
+        <article class="page-card">
+          <h3>What I learned</h3>
+          <p>
+            The project strengthened my approach to data modelling, API design, and cross-disciplinary
+            communication. Working closely with mechanical engineers pushed me to translate technical
+            detail into actionable stories.
+          </p>
+        </article>
+      </section>
+
+      <a class="page__cta" href="../index.html#projects">← Back to portfolio overview</a>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Emma Wigglesworth. Crafted with curiosity and care.</span>
+      <div class="footer__socials">
+        <a href="mailto:emma@kewbeach.ca" aria-label="Email Emma">✉️</a>
+        <a href="https://www.linkedin.com/in/emma-wigglesworth-96597b215/" aria-label="LinkedIn profile">in</a>
+        <a href="../index.html#projects" aria-label="Browse projects">★</a>
+      </div>
+    </footer>
+  </body>
+</html>
