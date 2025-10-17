@@ -1,23 +1,68 @@
 :root {
   /* Core palette */
 
-    /* --palette-bg: 7 11 26;
-    --palette-surface: 15 23 42;
-    --palette-primary: 124 92 255;
-    --palette-secondary: 74 222 128;
-    --palette-neutral: 226 232 240; */
+  /* original */
+  /* --palette-bg: 7 11 26;
+  --palette-surface: 15 23 42;
+  --palette-primary: 124 92 255;
+  --palette-secondary: 74 222 128;
+  --palette-neutral: 226 232 240; */
 
-    /* --palette-bg: 9 2 6;
-    --palette-surface: 0 14 20;
-    --palette-primary: 127 5 95;
-    --palette-secondary: 48 197 255;
-    --palette-neutral: 248 255 244; */
-
-  --palette-bg: 2 8 15;
+  /* pink-blue */
+  /* --palette-bg: 2 8 15;
   --palette-surface: 0 25 40;
   --palette-primary: 195 9 145;
   --palette-secondary: 48 197 255;
-  --palette-neutral: 248 255 244;
+  --palette-neutral: 248 255 244; */
+
+  /* pink-lemonade  */
+  /* --palette-bg: 0 0 0;
+  --palette-surface: 25 25 15;
+  --palette-primary: 242 106 141;
+  --palette-secondary: 255 203 119;
+  --palette-neutral: 255 240 220; */
+
+  /* teal-lemonade  */
+  /* --palette-bg: 0 0 0;
+  --palette-surface: 25 25 15;
+  --palette-primary: 58 175 185;
+  --palette-secondary: 255 203 119;
+  --palette-neutral: 255 240 220; */
+
+  /* strawberry-lemonade  */
+  --palette-bg: 0 0 0;
+  --palette-surface: 20 15 5;
+  --palette-primary: 185 49 79;
+  --palette-secondary: 255 203 119;
+  --palette-neutral: 255 240 220;
+
+  /* pastel-pinkie-dinkie-doo */
+  /* --palette-bg: 0 0 0;
+  --palette-surface: 25 25 15;
+  --palette-primary: 99 105 209;
+  --palette-secondary: 232 106 146;
+  --palette-neutral: 255 240 220; */
+
+  /* strawberry jam */
+  /* --palette-bg: 0 0 0;
+  --palette-surface: 20 10 10;
+  --palette-primary: 200 19 50;
+  --palette-secondary: 255 130 120;
+  --palette-neutral: 255 240 220; */
+
+  /* eco leafy green */
+  /* --palette-bg: 0 0 0;
+  --palette-surface: 25 25 15;
+  --palette-primary: 58 125 68;
+  --palette-secondary: 197 224 99;
+  --palette-neutral: 255 240 220; */
+
+  /* spider-man */
+  /* --palette-bg: 0 0 0;
+  --palette-surface: 25 25 15;
+  --palette-primary: 0 79 255;
+  --palette-secondary: 255 32 44;
+  --palette-neutral: 255 240 220; */
 
   /* Derived colors */
   --color-bg: rgb(var(--palette-bg));
@@ -316,7 +361,7 @@ button {
   overflow: hidden;
   display: grid;
   place-items: center;
-  background: linear-gradient(160deg, rgb(var(--palette-primary) / 0.3), var(--color-accent-soft));
+  background: linear-gradient(200deg, rgb(var(--palette-primary) / 0.3), var(--color-secondary-soft));
   box-shadow: var(--shadow-soft);
 }
 
