@@ -262,7 +262,7 @@ button {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
   gap: clamp(48px, 10vw, 96px);
-  padding: clamp(60px, 12vw, 120px) min(6vw, 72px) clamp(80px, 15vw, 160px);
+  padding: clamp(60px, 1vw, 120px) min(6vw, 72px) clamp(80px, 15vw, 160px);
 }
 
 .hero__content {
@@ -356,7 +356,9 @@ button {
 
 .hero__visual {
   position: relative;
-  aspect-ratio: 1.5;
+  aspect-ratio: 6/4;
+  min-height: 400px;
+  width: 100%;
   border-radius: var(--radius-xl);
   overflow: hidden;
   display: grid;
